@@ -1,0 +1,234 @@
+#home-page{
+    background: center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.home{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.home h1{
+    font-family: 'Sacramento', cursive;
+    font-size:5em;
+    text-align: center;
+}
+.home p{
+    padding-bottom: 1em;
+}
+.about{
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    background-color: #e4e9fc;
+}
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.description{
+    flex: 30%;
+    text-align: center;
+    margin-left: 4%;
+    font-size: 1vw;
+
+}
+.description p{
+    font-size: 1.4em;
+    text-align: left;
+}
+.profile-picture{
+    flex: 40%;
+}
+.profile-picture img{
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+.services{
+    margin: 0;
+    padding: 2em;
+}
+.services-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    
+}
+.services-container i{
+    font-size: 6em; 
+    padding-bottom: 0.5em; 
+}
+.services-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    height: 100%;
+    margin: 1.5em;
+    border-radius: 1em;
+    transition: ease-in-out 0.3s;
+}
+.services-container div:hover{
+    background-color: #E6E6E6;
+    transform: translateY(-10px);
+}
+.services h2{
+    text-align: center;
+    padding-top: 1%;
+}
+/* .services .card-deck{
+    padding: 2%;
+    padding-bottom: 5%;
+    margin: 2%;
+    margin-bottom: 0;
+} */
+.services h3{ 
+    text-align: center;
+}
+.services p{
+    text-align: center;
+}
+.testimonials{
+    background-color: #e4e9fc;
+    color: black;
+    text-align: center;
+}
+/* .testimonials hr{
+    background-color: white;
+} */
+.testimonials h2{
+    text-align: center;
+    padding-top: 1.5em;
+}
+.testimonials h3{
+    text-align: center;
+}
+.testimonials blockquote{
+    text-align: left;
+}
+.testimonials-container{
+    display: grid;
+    margin: 3%;
+    gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 2.5em;
+    margin-bottom: 0;
+}
+.testimonials-container div{
+    border: 1px solid #e4e9fc;
+    padding: 1em;
+    border-radius: 10%; 
+    transition: 0.5s;
+}
+.testimonials-container div:hover{
+    background-color: #c3c7d3;
+    border: 1px solid #e4e9fc;
+    transform: scale(0.9);
+}
+.testimonials-container div p{
+    text-align: center;
+}
+.testimonials img{
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+.testimonials #carouselExampleCaptions{
+    display: none;
+}
+
+@media (max-width: 840px){
+    .home{
+        text-align: center;
+    }
+    .home h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .testimonials-container{
+        grid-template-columns: 1fr;
+    }
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    .profile-picture{
+        margin: 5%;
+    }
+    .description{
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+    .description p{
+        margin: 5%;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    #services-page{
+        padding: 0.5em;
+    }
+    .testimonials h3{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 550px){
+    .home h1{
+        font-size: 1.8em;
+    }
+    .home p{
+        margin: 2% 5%;
+    }
+    .description p{
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 1em;
+        padding-bottom: 5%;
+    }
+    .testimonials h3{
+        font-size: 1em;
+    }
+    .testimonials .testimonials-container{
+        display: none;
+    }
+    .testimonials #carouselExampleCaptions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5em 0;
+    }
+    .testimonials #carouselExampleCaptions img{
+        text-align: center;
+        margin: 0  auto;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        opacity: 0.7;
+    }
+    .testimonials #carouselExampleCaptions h5,p{
+        font-size: 1em;
+    }
+    .testimonials #carouselExampleCaptions h5{
+        font-weight: 700;
+    }
+}

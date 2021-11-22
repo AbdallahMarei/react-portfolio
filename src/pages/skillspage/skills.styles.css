@@ -1,0 +1,83 @@
+.qualifications{
+    color: black;
+    /* background: url("images/blue-back.png") center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #DBE6FD;
+}
+.qualifications h2{
+    text-align: center;
+    padding-top: 3%;
+}
+.qualifications hr{
+    /* background: rgb(255, 255, 255); */
+    margin-bottom: 4%;
+}
+.qualifications .table{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    gap: 1em;
+    padding-bottom: 4%;
+}
+
+
+/* projects */
+
+.projects{
+   padding-bottom: 5%;
+}
+.projects h2{
+    text-align: center;
+    padding-top: 1em;
+}
+.projects h3{
+    text-align: center;
+    margin: 2%;
+}
+.projects #carouselExampleFade img{
+width: 100%;
+height: auto;
+}
+@media (max-width: 840px){
+    .qualifications .table{
+        grid-template-columns: 1fr;
+         font-size: 1.3rem;
+     }
+     .qualifications .table h3{
+        text-align: center;
+    }
+    .projects h3{
+        font-size: 1em;
+    }
+}
+@media (max-width: 550px){
+    .qualifications .table{
+        grid-template-columns: 1fr;
+        font-size: 1em;
+        
+    }
+    .qualifications .table h3{
+        text-align: center;
+    }
+    .projects #carouselExampleFade{
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .projects #carouselExampleFade .carousel-inner{
+        height: 80%;
+        display: flex;
+        align-items: center;
+    }
+    .projects h3{
+        font-size: 1em;
+    }
+    .projects #carouselExampleFade img{
+        height: 60vh;
+    }
+}

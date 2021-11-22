@@ -1,0 +1,55 @@
+
+.contactme{
+    background-color: #E6E6E6;
+}
+.contactme h2{
+    text-align: center;
+    padding-top: 3%;
+}
+.contactme h3{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.3em;
+}
+.contactme-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 3%;
+    padding-bottom: 3em;
+}
+.contactme form{
+    width: 50%;
+}
+.contactme .contact-info p:nth-child(1){
+    font-size: 2em;
+}
+.contactme .contact-info{
+    padding-top: 1.5em;
+}
+
+@media (max-width: 840px){
+    .contactme-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactme-container form{
+        padding: auto;
+        width: 100%;
+    }
+    .contactme-container .contact-info{
+        align-self:baseline;
+        padding-top: 3em;
+    }
+    .contactme h3{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 550px){
+    .contactme h3{
+        font-size: 0.8em;
+    }
+}
